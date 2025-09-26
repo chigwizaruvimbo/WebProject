@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BellahShop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-gem"></i> BellahShop</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.php">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li>
+                        <a href="cart.html" class="cart-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-section" style="padding: 120px 0 80px;">
+        <div class="container">
+            <h1 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: #333;">Contact Us</h1>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem; color: #666;">We'd love to hear from you! Get in touch with any questions or feedback.</p>
+            
+            <div class="contact-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+                <div class="contact-info">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 2rem; color: #333;">Get in Touch</h3>
+                    <div class="contact-item" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                        <i class="fas fa-map-marker-alt" style="font-size: 1.5rem; color: #ff6b9d; width: 30px;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem; color: #333;">Address</h4>
+                            <p style="color: #666;">25th Avenue<br>No 2,Malbereign</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                        <i class="fas fa-phone" style="font-size: 1.5rem; color: #ff6b9d; width: 30px;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem; color: #333;">Phone</h4>
+                            <p style="color: #666;">+263775365187</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                        <i class="fas fa-envelope" style="font-size: 1.5rem; color: #ff6b9d; width: 30px;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem; color: #333;">Email</h4>
+                            <p style="color: #666;">info@bellahshop.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                        <i class="fas fa-clock" style="font-size: 1.5rem; color: #ff6b9d; width: 30px;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem; color: #333;">Business Hours</h4>
+                            <p style="color: #666;">Mon - Fri: 9:00 AM - 6:00 PM<br>Sat - Sun: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1.5rem; color: #333;">Send us a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 8px; font-size: 1rem;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required style="width: 100%; padding: 12px 15px; border: 2px solid #ddd; border-radius: 8px; font-size: 1rem; resize: vertical;"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" style="width: 100%; background: linear-gradient(135deg, #ff6b9d, #c44569); color: white; border: none; padding: 15px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: background 0.3s;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BellahShop</h3>
+                    <p>Your trusted partner in beauty and cosmetics.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +263775365187</p>
+                    <p><i class="fas fa-envelope"></i> info@bellahshop.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 25th Avenue,No 2 Malbereign</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BellahShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header" onclick="toggleChat()">
+            <i class="fas fa-comments"></i>
+            <span>Chat with us!</span>
+            <i class="fas fa-chevron-up" id="chat-toggle"></i>
+        </div>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="chat-messages" id="chat-messages">
+                <div class="bot-message">
+                    <p>Hi! I'm your beauty assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            
+            showMessage('Thank you for your message! We\'ll get back to you soon.', 'success');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

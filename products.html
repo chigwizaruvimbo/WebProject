@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - BellahShop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-gem"></i> BellahShop</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="cart.html" class="cart-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <h1>Our Products</h1>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category" onchange="filterProducts()">
+                        <option value="all">All Categories</option>
+                        <option value="lipstick">Lipstick</option>
+                        <option value="foundation">Foundation</option>
+                        <option value="eyeshadow">Eyeshadow</option>
+                        <option value="mascara">Mascara</option>
+                        <option value="skincare">Skincare</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-range">Price Range:</label>
+                    <select id="price-range" onchange="filterProducts()">
+                        <option value="all">All Prices</option>
+                        <option value="0-25">$0 - $25</option>
+                        <option value="25-50">$25 - $50</option>
+                        <option value="50-100">$50 - $100</option>
+                        <option value="100+">$100+</option>
+                    </select>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Search products..." onkeyup="searchProducts()">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BellahShop</h3>
+                    <p>Your trusted partner in beauty and cosmetics.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.php">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +263775365187</p>
+                    <p><i class="fas fa-envelope"></i> info@bellahshop.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i>25th Avenue,No 2 Malbereign</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BellahShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header" onclick="toggleChat()">
+            <i class="fas fa-comments"></i>
+            <span>Chat with us!</span>
+            <i class="fas fa-chevron-up" id="chat-toggle"></i>
+        </div>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="chat-messages" id="chat-messages">
+                <div class="bot-message">
+                    <p>Hi! I'm your beauty assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
